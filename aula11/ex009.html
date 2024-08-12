@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Vc é natural de onde?</title>
+</head>
+<body>
+   
+   <h1>Descubra se vc é ou não Estrangeiro!</h1>
+   <p> 
+      Se vc mora no 
+      <input type="text" name="txtpais" id="txtpais">
+      <input type="button" value="Verificar" onclick="calcular()">
+      
+   </p>
+   <p id="res"></p>
+   
+   <script>
+      
+      function calcular() {
+   
+         const txtpais = document.getElementById('txtpais').value
+         const res = document.getElementById('res')
+         
+         if (txtpais == 'BR') {
+            
+            res.textContent = 'Vc é Brasileiro!'
+            
+         } else if(txtpais == 'EUA') {
+            
+            res.textContent = 'Vc é Americano!'
+            
+         } else { 
+            
+            res.textContent = 'Vc é Estrangeiro!'
+         
+         }
+         
+      }
+   
+   </script>
+   
+</body>
+</html>
