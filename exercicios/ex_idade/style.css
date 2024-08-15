@@ -30,18 +30,23 @@ section {
    background-color: white;
    border-radius: 10px;
    padding: 20px;
-   width: 500px;
-   height: 400px;
    text-align: center;
-   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.369);
+   width: 600px;
+   height: 600px;
    display: flex;
    flex-direction: column;
    justify-content: space-between;
    
-   
 }
 
-#foto img {
+#res {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   row-gap: 40px;
+}
+
+#foto {
    width: 250px;
    height: 250px;
    border-radius: 50%;
