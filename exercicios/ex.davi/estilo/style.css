@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+* {
+   
+   margin: 0px;
+   padding: 0px;
+   
+   box-sizing: border-box;
+   
+}
+
+body {
+   
+   width: 100vw;
+   height: 100vh;
+   
+   text-align: center;
+   
+   background-color: rgba(0, 0, 0, 0.41);
+   color: white;
+   
+}
+
+h1 {
+   
+   height: 50px;
+   
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+}
+
+.header {
+   
+   width: 100%;
+   height: 300px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   
+   row-gap: 20px;
+   
+   font-size: 18px;
+   
+}
+
+#txtcarro {
+   
+   padding: 7px;
+   
+   
+   background-color: rgb(102, 102, 102);
+   color: rgb(255, 255, 255);
+   
+   border-radius: 5px;
+   
+}
+#adccarro {
+   
+   padding: 2px 50px;
+   font-size: 16px;
+   background-color: black;
+   color: white;
+   cursor: pointer;
+   
+   border-radius: 4px ;
+   
+}
+#flista {
+   
+   width: 300px;
+   
+}

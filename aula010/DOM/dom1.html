@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Teste de DOM</title>
+</head>
+<body>
+   
+   <h1>Seu nome é?</h1>
+   
+   <p>
+      Digite seu nome e sobrenome:
+      <input type="text" name="txtnome" id="txtnome">
+      <input type="text" name="txtsobrenome" id="txtsobrenome">
+      <input type="button" value="Enviar" onclick="enviar()"> 
+      
+      <div id="res">
+            
+      </div>  
+   </p>
+   <br>
+   <br>
+   <p>
+      
+      Descubra o tamanho do seu pau!
+      <br>
+      <br>
+      Digite sua altura:<input type="number" name="Altura" id="altura">
+      <br>
+      <br>
+      Digite seu peso:<input type="number" name="Peso" id="peso">
+      <br>
+      <br>
+      <input type="button" value="Verifique" onclick="verificar()">
+      <br>
+      <br>
+      <p id="tamanho"></p>
+      
+   </p>
+   
+   
+   <script>
+      
+      function enviar() {
+         
+         var nome = document.getElementById('txtnome')
+         var sobrenome = document.getElementById('txtsobrenome')
+         var res = document.getElementById('res')
+         
+         var nome = nome.value
+         var sobrenome = sobrenome.value
+         
+         res.innerHTML = `Bem vindo ${nome} ${sobrenome}!`
+         
+      }
+      
+      function verificar() {
+         
+         var alt = document.getElementById('altura')
+         var pes = document.getElementById('peso')
+         var tam = document.getElementById('tamanho')
+         
+         var min = 30
+         
+         var alt = Number(alt.value)
+         var pes = Number(pes.value)
+         
+         
+         var tam = pes / alt - min
+         
+         tamanho.innerText = `Sua girombinha tem ${tam} cm!`
+         
+      }
+      
+   </script>
+   
+</body>
+</html>
