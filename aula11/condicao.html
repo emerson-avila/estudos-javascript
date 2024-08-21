@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Sistema de Multas</title>
+</head>
+<body>
+   
+   <h1>Verifique se vc foi multado!</h1>
+   
+   <p>
+      Digite a sua velocidade:
+      <input type="number" name="txtv" id="txtv">
+      <input type="button" value="Verifivar" onclick="verificar()">
+      <p id="atual1"></p>
+   </p>
+   
+   <div id="res">
+      
+   </div>
+   
+   <script>
+      
+
+        
+        
+      
+      function verificar() {
+         
+         
+         // variaveis
+         var vel = document.getElementById('txtv')
+         var res = document.getElementById('res')
+         var atual = document.getElementById('atual1')
+         var lim = 50
+        
+         var ult = Number(vel.value)
+         
+         
+         var pas = ult - lim
+         
+         atual.innerHTML = `Sua velovidade atual é de ${ult}km/h. E o limite é de ${lim}km/h`
+         
+         if (ult > lim) {
+            
+            res.innerText = `Vc passou a ${pas}km/h a cima do limite. Multado!`
+            
+         } else {
+            
+            res.innerText = `Vc é um bom motora!`
+            
+         }
+         
+      }
+    
+   </script>
+   
+</body>
+</html>
