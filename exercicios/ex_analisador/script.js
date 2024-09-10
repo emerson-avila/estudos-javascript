@@ -1,6 +1,8 @@
 let num = document.getElementById('fnum')
 let lista = document.getElementById('flista')
+
 let res = document.getElementById('res')
+
 let valores = []
 
 function isNumero(n) {
@@ -33,7 +35,7 @@ function inLista(n, l) {
 
 function adicionar() {
    
-  if(isNumero(num.value) && !inLista(num.value, valores)) {
+  if(isNumero(num.value) && !inLista(num, valores)) {
    
       valores.push(Number(num.value))
       let item = document.createElement('option')
